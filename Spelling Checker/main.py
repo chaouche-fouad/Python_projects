@@ -13,8 +13,8 @@ def check_spelling():
     a = TextBlob(word)
     right=str(a.correct())
 
-    cs = Label(root, text=f"Correct text is : \"{right}\"" ,font=("poppins",20), bg="#dae6f6", fg="#364971")
-    cs.place(x=100, y=250)
+    spell = Label(root, text=f"Correct text is : \"{right}\"" ,font=("poppins",20), bg="#dae6f6", fg="#364971")
+    spell.place(x=100, y=250)
     
 
 heading = Label(root,text="Spelling Checker", font=("Trebuchet Ms", 30, "bold"), bg="#dae6f6", fg="#364971")
